@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 26, 2019 6:59:07 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.evry.model.Patient" table="PATIENT">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="pname" type="java.lang.String">
+            <column name="PNAME" />
+        </property>
+        <property name="age" type="int">
+            <column name="AGE" />
+        </property>
+        <property name="Bgroup" type="java.lang.String">
+            <column name="BGROUP" />
+        </property>
+        <property name="checkup" type="java.lang.String">
+            <column name="CHECKUP" />
+        </property>
+        <property name="doctors" type="java.lang.String">
+            <column name="DOCTORS" />
+        </property>
+        <property name="testcase" type="java.lang.String">
+            <column name="TESTCASE" />
+        </property>
+    </class>
+</hibernate-mapping>
